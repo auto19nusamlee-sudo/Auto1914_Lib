@@ -1,0 +1,34 @@
+First Things To Do is That You had to Import.
+
+if is it on YourMAin file not any other file. just Use:
+from TwoBasNumBerSyS import TwoBaseNumSys
+
+if is it on NOT youmainFile. in other file. then just use:
+from {YouFolderName}.TwoBasNumBerSyS Import TwoBaseNumSys
+
+How to Use The Code:
+There Are only One Code you Can use:
+TwoBaseNumSys.Sys1(x, Name= "x", Count= (x , x), CountADV= (x, x, x))
+
+= TwoBaseNumSys.Sys1 is to Call Main Class.def to use.
+= (
+    x = Name of your File or Path NAme to You File,
+    Name="x" = is to Name Start of Count. like if NAme Are Test: Test: 2',
+    Count=(x,x) = A count sys that you can use{
+    - first x is Set of Number (NOT EACH TIME)
+    - 2nd x is CountTime. like 1*3 = 3
+    }
+    CountADV=(x,x,x) = is a Name of ADV sti that you can set. if you want to use it{
+        - 1st x is ** of Number. like 3**3 = 26
+        - 2nd x is //.
+        - 3rd is number that you can add to it without use First x on Count.
+    }
+)
+
+defaults of These Are:
+TwoBaseNumSys.Sys1(
+    TbN = TbN,
+    Name="Count",
+    Count=(1 , 1),
+    CountADV=(1 , 1 , 0)
+   )
