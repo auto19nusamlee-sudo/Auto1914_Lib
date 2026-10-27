@@ -6,13 +6,19 @@ from TwoBasNumBerSyS import TwoBaseNumSys
 if is it on NOT youmainFile. in other file. then just use:
 from {YouFolderName}.TwoBasNumBerSyS Import TwoBaseNumSys
 
-How to Use The Code:
-There Are only One Code you Can use:
-TwoBaseNumSys.Sys1(x, Name= "x", Count= (x , x), CountADV= (x, x, x))
+x = Update Ves from 1.0Demo
+y = Update Ves from 1.0_1
+
+How to Use Codes:
+
+###
+- 1st Command{
+TwoBaseNumSys.Sys1(x, y, Name= "x", Count= (x , x), CountADV= (x, x, x))
 
 = TwoBaseNumSys.Sys1 is to Call Main Class.def to use.
 = (
     x = Name of your File or Path NAme to You File,
+    y = Anoth Name of your File for count 100+.
     Name="x" = is to Name Start of Count. like if NAme Are Test: Test: 2',
     Count=(x,x) = A count sys that you can use{
     - first x is Set of Number (NOT EACH TIME)
@@ -28,7 +34,35 @@ TwoBaseNumSys.Sys1(x, Name= "x", Count= (x , x), CountADV= (x, x, x))
 defaults of These Are:
 TwoBaseNumSys.Sys1(
     TbN = TbN,
+    CASs = CAss
     Name="Count",
     Count=(1 , 1),
     CountADV=(1 , 1 , 0)
    )
+}
+
+What Can is... Do?:
+Is Count Da
+###
+
+
+###
+- 2nd Command{
+TwoBaseNumSys.Sys1RS(x, y)
+= TwoBaseNumSys.Sys1RS is to Call Main Class.def to use.
+= (
+    x = Name of your File or Path NAme to You File,
+    y = Anoth Name of your File for count 100+.
+   )
+
+defaults of These Are:
+TwoBaseNumSys.Sys1RS(
+    TbN = TbN,
+    CASs = CAss
+   )
+
+What Can is... Do?:
+Reset that Ves from whatever that number are to
+0000 0000 as 2-base number or 0
+}
+###

@@ -1,24 +1,18 @@
-#the most useless thing make by me
-#how to use:
-#a = BASE / "Texts" / "a.txt"
-#b = BASE / "Texts" / "b.txt"
-#TwoBaseNumSys.Sys1(a)  # Song A
-#TwoBaseNumSys.Sys1(b)  # Song B
-#version: 1.0Demo
+#version: 1.0_1
 
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
-TbN = BASE / "TBNBStxtF" / "TBNBStxt.txt"
+TbN = BASE / "TBNBStxtF" / "TBNTest.txt"
 CASs = BASE / "TBNBStxtF" / "CA256S.txt"
 
 class TwoBaseNumSys():
-   def Sys1(TbN = TbN, Name="Count", Count=(1 , 1), CountADV=(1 , 1 , 0)):
+   def Sys1(TbN = TbN, CASs = CASs, Name="Count", Count=(1 , 1), CountADV=(1 , 1 , 0)):
         CountSet , CountTime = Count
         CountTimeBIN , CountFD , CountSet2 = CountADV
         ConutAFER256 = 0
-        TbNW = (TbN , "w")
-        TbNR = (TbN , "r")
+        TbNW = (TbN, "w")
+        TbNR = (TbN, "r")
         Op1 = (CASs , "w")
         Op2 = (CASs , "r")
 
@@ -665,3 +659,11 @@ class TwoBaseNumSys():
            print("ERORR D:")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0000")
+
+   def Sys1RS(TbNS = TbN, CASsS = CASs):
+      with open(TbNS, "w") as UsefuP:
+         UsefuP.write("0000 0000")
+
+      Op1e = (CASsS , "w")
+      with open(*Op1e) as DDDp:
+         DDDp.write("0000 0000")
