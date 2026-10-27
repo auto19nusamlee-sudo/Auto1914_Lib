@@ -1,4 +1,4 @@
-#version: 1.0_1
+#version: 1.0_1ิิิิิb
 
 from pathlib import Path
 
@@ -22,40 +22,40 @@ class TwoBaseNumSys():
         if Op3b == "0000 0000":
          ConutAFER256 = 0
         elif Op3b == "0000 0001":
-          ConutAFER256 = 99
+          ConutAFER256 = 101
         elif Op3b == "0000 0010":
-           ConutAFER256 = 198
+           ConutAFER256 = 202
         elif Op3b == "0000 0011":
-           ConutAFER256 = 297
+           ConutAFER256 = 303
         elif Op3b == "0000 0100":
-           ConutAFER256 = 396
+           ConutAFER256 = 404
         elif Op3b == "0000 0101":
-           ConutAFER256 = 495
+           ConutAFER256 = 505
 
         elif Op3b == "0000 0110":
-           ConutAFER256 = 594
+           ConutAFER256 = 606
         elif Op3b == "0000 0111":
-           ConutAFER256 = 693
+           ConutAFER256 = 707
         elif Op3b == "0000 1000":
-           ConutAFER256 = 792
+           ConutAFER256 = 808
         elif Op3b == "0000 1001":
-           ConutAFER256 = 891
+           ConutAFER256 = 909
         elif Op3b == "0000 1010":
-           ConutAFER256 = 990
+           ConutAFER256 = 1010
 
         elif Op3b == "0000 1011":
-           ConutAFER256 = 1089
+           ConutAFER256 = 1111
         elif Op3b == "0000 1100":
-           ConutAFER256 = 1188
+           ConutAFER256 = 1212
         elif Op3b == "0000 1101":
-           ConutAFER256 = 1287
+           ConutAFER256 = 1313
         elif Op3b == "0000 1110":
-           ConutAFER256 = 1386
+           ConutAFER256 = 1414
         elif Op3b == "0000 1111":
-           ConutAFER256 = 1485
+           ConutAFER256 = 1515
 
         elif Op3b == "0001 0000":
-           ConutAFER256 = 1584
+           ConutAFER256 = 1616
 
         with open(*TbNR) as ReadSys:
            ReadSy = ReadSys.read()
@@ -652,13 +652,14 @@ class TwoBaseNumSys():
            print(f"{Name}: {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0110 0100")
-           Testi()
 
         #more than 255
         else:
-           print("ERORR D:")
+           Number = (((100 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
+           print(f"{Name}: {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0000")
+           Testi()
 
    def Sys1RS(TbNS = TbN, CASsS = CASs):
       with open(TbNS, "w") as UsefuP:
