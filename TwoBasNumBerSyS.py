@@ -1,8 +1,9 @@
-#version: 1.0_1ิิิิิb
+#version: 1.0_2
 
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
+
 TbN = BASE / "TBNBStxtF" / "TBNTest.txt"
 CASs = BASE / "TBNBStxtF" / "CA256S.txt"
 
@@ -128,106 +129,126 @@ class TwoBaseNumSys():
         #TBN 0-10
         if ReadSy == "0000 0000":
            Number = (((0 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 0 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0001")
         elif ReadSy == "0000 0001":
            Number = (((1 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 1 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0010")
         elif ReadSy == "0000 0010":
            Number = (((2 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 2 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0011")
 
         elif ReadSy == "0000 0011":
            Number = (((3 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 3 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0100")
         elif ReadSy == "0000 0100":
            Number = (((4 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 4 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0101")
         elif ReadSy == "0000 0101":
            Number = (((5 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 5 + ConutAFER256
+           print(f"{Name}:{Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0110")
         elif ReadSy == "0000 0110":
+           Number2 = 6 + ConutAFER256
            Number = (((6 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0111")
         elif ReadSy == "0000 0111":
+           Number2 = 7 + ConutAFER256
            Number = (((7 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1000")
         elif ReadSy == "0000 1000":
+           Number2 = 8 + ConutAFER256
            Number = (((8 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1001")
         elif ReadSy == "0000 1001":
+           Number2 = 9 + ConutAFER256 
            Number = (((9 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1010")
-
-
-        #TBN 11 - 20
+ 
+ 
+        #TBN 11 - 20 
         elif ReadSy == "0000 1010":
            Number = (((10 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 10 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1011")
         elif ReadSy == "0000 1011":
            Number = (((11 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 11 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1100")
         elif ReadSy == "0000 1100":
            Number = (((12 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 12 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1101")
         elif ReadSy == "0000 1101":
            Number = (((13 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 13 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1110")
         elif ReadSy == "0000 1110":
            Number = (((14 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 14 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 1111")
         elif ReadSy == "0000 1111":
            Number = (((15 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 15 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0000")
         elif ReadSy == "0001 0000":
            Number = (((16 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 16 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0001")
         elif ReadSy == "0001 0001":
            Number = (((17 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 17 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0010")
         elif ReadSy == "0001 0010":
            Number = (((18 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 18 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0011")
         elif ReadSy == "0001 0011":
            Number = (((19 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 19 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0100")
 
@@ -235,104 +256,127 @@ class TwoBaseNumSys():
         #TBN 21 - 30
         elif ReadSy == "0001 0100":
            Number = (((20 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 20 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0101")
         elif ReadSy == "0001 0101":
            Number = (((21 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 21 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0110")
         elif ReadSy == "0001 0110":
            Number = (((22 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 22 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 0111")
         elif ReadSy == "0001 0111":
            Number = (((23 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 23 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1000")
         elif ReadSy == "0001 1000":
            Number = (((24 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 24 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1001")
         elif ReadSy == "0001 1001":
            Number = (((25 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 25 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1010")
+
+#########################################################################
+
         elif ReadSy == "0001 1010":
            Number = (((26 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 26 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1011")
         elif ReadSy == "0001 1011":
            Number = (((27 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 27 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1100")
         elif ReadSy == "0001 1100":
            Number = (((28 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 28 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1101")
         elif ReadSy == "0001 1101":
            Number = (((29 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 29 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1110")
 
         #TBN 31 - 40
         elif ReadSy == "0001 1110":
            Number = (((30 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 30 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0001 1111")
         elif ReadSy == "0001 1111":
            Number = (((31 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 31 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0000")
         elif ReadSy == "0010 0000":
            Number = (((32 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 32 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0001")
         elif ReadSy == "0010 0001":
            Number = (((33 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 33 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0010")
         elif ReadSy == "0010 0010":
            Number = (((34 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 34 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0011")
         elif ReadSy == "0010 0011":
            Number = (((35 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 35 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0100")
         elif ReadSy == "0010 0100":
            Number = (((36 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 36 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0101")
         elif ReadSy == "0010 0101":
            Number = (((37 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 37 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0110")
         elif ReadSy == "0010 0110":
            Number = (((38 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 38 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 0111")
         elif ReadSy == "0010 0111":
            Number = (((39 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 39 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1000")
 
@@ -340,52 +384,62 @@ class TwoBaseNumSys():
         #TBN 41 - 50
         elif ReadSy == "0010 1000":
            Number = (((40 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 40 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1001")
         elif ReadSy == "0010 1001":
            Number = (((41 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 41 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1010")
         elif ReadSy == "0010 1010":
            Number = (((42 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 42 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1011")
         elif ReadSy == "0010 1011":
            Number = (((43 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 43 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1100")
         elif ReadSy == "0010 1100":
            Number = (((44 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 44 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1101")
         elif ReadSy == "0010 1101":
            Number = (((45 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 45 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1110")
         elif ReadSy == "0010 1110":
            Number = (((46 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 46 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0010 1111")
         elif ReadSy == "0010 1111":
            Number = (((47 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 47 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0000")
         elif ReadSy == "0011 0000":
            Number = (((48 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 48 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0001")
         elif ReadSy == "0011 0001":
            Number = (((49 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 49 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0010")
 
@@ -394,52 +448,62 @@ class TwoBaseNumSys():
         #TBN 51 - 60
         elif ReadSy == "0011 0010":
            Number = (((50 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 50 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0011")
         elif ReadSy == "0011 0011":
            Number = (((51 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 51 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0100")
         elif ReadSy == "0011 0100":
            Number = (((52 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 52 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0101")
         elif ReadSy == "0011 0101":
            Number = (((53 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 53 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0110")
         elif ReadSy == "0011 0110":
            Number = (((54 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 54 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 0111") ##
         elif ReadSy == "0011 0111":
            Number = (((55 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 55 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1000")
         elif ReadSy == "0011 1000":
            Number = (((56 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 56 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1001")
         elif ReadSy == "0011 1001":
            Number = (((57 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 57 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1010")
         elif ReadSy == "0011 1010":
            Number = (((58 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 58 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1011")
         elif ReadSy == "0011 1011":
            Number = (((59 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 59 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1100")
 
@@ -447,104 +511,124 @@ class TwoBaseNumSys():
         #TBN 61 - 70
         elif ReadSy == "0011 1100":
            Number = (((60 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 60 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1101")
         elif ReadSy == "0011 1101":
            Number = (((61 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 61 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1110")
         elif ReadSy == "0011 1110":
            Number = (((62 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 62 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0011 1111")
         elif ReadSy == "0011 1111":
            Number = (((63 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 63 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0000") ##
         elif ReadSy == "0100 0000":
            Number = (((64 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 64 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0001")
         elif ReadSy == "0100 0001":
            Number = (((65 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 65 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0010")
         elif ReadSy == "0100 0010":
            Number = (((66 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 66 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0011")
         elif ReadSy == "0100 0011":
            Number = (((67 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 67 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0100")
         elif ReadSy == "0100 0100":
            Number = (((68 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 68 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0101")
         elif ReadSy == "0100 0101":
            Number = (((69 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 69 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0110")
 
         #TBN 71 - 80
         elif ReadSy == "0100 0110":
            Number = (((70 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 70 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 0111")
         elif ReadSy == "0100 0111":
            Number = (((71 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 71 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1000")
         elif ReadSy == "0100 1000":
            Number = (((72 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 72 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1001")
         elif ReadSy == "0100 1001":
            Number = (((73 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 73 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1010")
         elif ReadSy == "0100 1010":
            Number = (((74 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 74 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1011")
         elif ReadSy == "0100 1011":
            Number = (((75 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 75 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1100")
         elif ReadSy == "0100 1100":
            Number = (((76 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 76 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1101")
         elif ReadSy == "0100 1101":
            Number = (((77 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 77 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1110")
         elif ReadSy == "0100 1110":
            Number = (((78 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 78 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0100 1111")
         elif ReadSy == "0100 1111":
            Number = (((79 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 79 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0000")
 
@@ -552,111 +636,132 @@ class TwoBaseNumSys():
         #TBN 81 - 90
         elif ReadSy == "0101 0000":
            Number = (((80 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 80 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0001")
         elif ReadSy == "0101 0001":
            Number = (((81 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 81 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0010")
         elif ReadSy == "0101 0010":
            Number = (((82 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 82 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0011")
         elif ReadSy == "0101 0011":
            Number = (((83 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 83 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0100")
         elif ReadSy == "0101 0100":
            Number = (((84 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 84 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0101")
         elif ReadSy == "0101 0101":
            Number = (((85 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 85 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0110")
         elif ReadSy == "0101 0110":
            Number = (((86 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 86 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 0111")
         elif ReadSy == "0101 0111":
            Number = (((87 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 87 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1000")
         elif ReadSy == "0101 1000":
            Number = (((88 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 88 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1001")
         elif ReadSy == "0101 1001":
            Number = (((89 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 89 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1010")
 
         #TBN 91 - 100
         elif ReadSy == "0101 1010":
            Number = (((90 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 90 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1011")
         elif ReadSy == "0101 1011":
            Number = (((91 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 91 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1100")
         elif ReadSy == "0101 1100":
            Number = (((92 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 92 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1101")
         elif ReadSy == "0101 1101":
            Number = (((93 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 93 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1110")
         elif ReadSy == "0101 1110":
            Number = (((94 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 94 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0101 1111")
         elif ReadSy == "0101 1111":
            Number = (((95 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 95 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0110 0000")
         elif ReadSy == "0110 0000":
            Number = (((96 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 96 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0110 0001")
         elif ReadSy == "0110 0001":
            Number = (((97 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 97 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0110 0010")
         elif ReadSy == "0110 0010":
            Number = (((98 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 98 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0110 0011")
         elif ReadSy == "0110 0011":
            Number = (((99 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 99 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0110 0100")
 
         #more than 255
         else:
            Number = (((100 + CountSet + CountSet2 + ConutAFER256) *CountTime) //CountFD)**CountTimeBIN
-           print(f"{Name}: {Number}")
+           Number2 = 100 + ConutAFER256
+           print(f"{Name}: {Number2} - {Number}")
            with open(*TbNW) as ReadSys2:
               ReadSys2.write("0000 0000")
            Testi()
