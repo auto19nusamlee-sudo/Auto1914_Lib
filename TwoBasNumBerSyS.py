@@ -134,7 +134,7 @@ class colorTextSys():
       elif add == "Hide":
          add = "8"
       elif add == "ST":
-         add == "9"
+         add = "9"
       else:
          add = add
 
@@ -163,7 +163,7 @@ class colorTextSys():
       elif add == "Hide":
          add = "8;"
       elif add == "ST":
-         add == "9;"
+         add = "9;"
       else:
          add = add
 
