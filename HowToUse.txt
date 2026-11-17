@@ -1,16 +1,76 @@
 First Things To Do is That You had to Import.
 
-if is it on YourMAin file not any other file. just Use:
-from TwoBasNumBerSyS import TwoBaseNumSys
-
-if is it on NOT youmainFile. in other file. then just use:
-from {YouFolderName}.TwoBasNumBerSyS Import TwoBaseNumSys
+from TwoBasNumBerSyS import TwoBaseNumSys , colorTextSys
 
 x = Update Ves from 1.0Demo
 y = Update Ves from 1.0_1
+w = Update Ves from 1.0_3
+
+#DONT FORGOT YOU CAN USE "AS" FOR THOES LONG COMMAND START NAME#
 
 How to Use Codes:
+=== colorTextSys ===
+###
+Main Command(
+colorTextSys.Stext(text=w, fg=w, bg=w, add=w, fgb=True, bgb=True)
+= colorTextSys.Stext is to Call Main Class.def to use.
+= (
+    text = a text for YOUR text.
+    fg = a color for text. have(
+        1. "black"
+        2. "red"
+        3. "green"
+        4. "yellow"
+        5. "blue"
+        6. "magenta"
+        7. "cyan"
+        8. "white"
+    )
+    bg = same for fg but now are color for background
+    also have same color
+    fgb / bgb = Is for make color fg or bg light. def are light
+    add = a number for text stye! have(
+        1: "RA" (0 - Reset All)
+        2: "Bold" (1)
+        3: "LTB" (2 - Dim/Light)
+        4: "Italic" (3)
+        5: "UL" (4 - Underline)
+        6: "Blink" (5)
+        7: "CR" (7 - Reverse/Invert)
+        8: "Hide" (8 - Hidden)
+        9: "ST" (9 - Strikethrough)
 
+    )
+)
+)
+
+defaults of These Are:
+colorTextSys.Stext(
+    text,
+    fg=None,
+    bg=None,
+    add=None,
+    fgb=True,
+    bgb=True):
+
+What Can It Do?:
+it color the text if you IDE is supp its da
+###
+
+###
+sUB command(
+    1st: colorTextSys.STfg(fg=w, fgb=w, start = True)
+    - fg = color of text, same color as fg there ^.
+    - fgb = Light Buness of color. def as light
+    - start = Is It the start? or just number.
+    - what can it Do?: is are for retrun only they thing. this one are fg or text color
+    2nd: colorTextSys.STbg(bg=w, bgb=w, start=True)
+    - is just... the same as 1st but is background color of text. yea....
+    3rd: colorTextSys.STadd(add=w, start=True)
+    - is just... same but is it for sty of text you can see there in add ^
+)
+
+=== TwoBaseNumSys ===
 ###
 - 1st Command{
 TwoBaseNumSys.Sys1(x, y, Name= "x", Count= (x , x), CountADV= (x, x, x))

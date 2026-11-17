@@ -1,4 +1,4 @@
-#version: 1.0_2
+#aversion: 1.0_3
 
 from pathlib import Path
 
@@ -6,6 +6,266 @@ BASE = Path(__file__).resolve().parent
 
 TbN = BASE / "TBNBStxtF" / "TBNTest.txt"
 CASs = BASE / "TBNBStxtF" / "CA256S.txt"
+
+class colorTextSys():
+   def STfg(fg=None, fgb=None, start = True):
+      if fg is None:
+         fg = ""
+      elif fg == "black":
+         if fgb == True:
+            fg = "90"
+         else:
+            fg = "30"
+      elif fg == "red":
+         if fgb == True:
+            fg = "91"
+         else:
+            fg = "31"
+      elif fg == "green":
+         if fgb == True:
+            fg = "92"
+         else:
+            fg = "32"
+
+      elif fg == "yellow":
+         if fgb == True:
+            fg = "93"
+         else:
+            fg = "33"
+      elif fg == "blue":
+         if fgb == True:
+            fg = "94"
+         else:
+            fg = "34"
+
+      elif fg == "magenta":
+         if fgb == True:
+            fg = "95"
+         else:
+            fg = "35"
+      elif fg == "cyan":
+         if fgb == True:
+            fg = "96"
+         else:
+            fg = "36"
+
+      elif fg == "white":
+         if fgb == True:
+            fg = "97"
+         else:
+            fg = "37"
+      else:
+         fg = fg
+         
+      if start == True:
+         return f"\033[{fg}m"
+      else:
+         return fg
+   def STbg(bg=None, bgb=None, start=True):
+      if bg is None:
+         bg = ""
+      elif bg == "black":
+         if bgb == True:
+            bg = "100"
+         else:
+            bg = "40"
+      elif bg == "red":
+         if bgb == True:
+            bg = "101"
+         else:
+            bg = "41"
+      elif bg == "green":
+         if bgb == True:
+            bg = "102"
+         else:
+            bg = "42"
+
+      elif bg == "yellow":
+         if bgb == True:
+            bg = "103"
+         else:
+            bg = "43"
+      elif bg == "blue":
+         if bgb == True:
+            bg = "104"
+         else:
+            bg = "44"
+
+      elif bg == "magenta":
+         if bgb == True:
+            bg = "105"
+         else:
+            bg = "45"
+      elif bg == "cyan":
+         if bgb == True:
+            bg = "106"
+         else:
+            bg = "46"
+
+      elif bg == "white":
+         if bgb == True:
+            bg = "107"
+         else:
+            bg = "47"
+      else:
+         bg = bg
+
+      if start == True:
+         return f"\033[{bg}m"
+      else:
+         return bg
+   def STadd(add=None, start=True):
+      if add is None:
+         add = ""
+      elif add == "RA":
+         add = "0"
+      elif add == "Bold":
+         add = "1"
+      elif add == "LTB":
+         add = "2"
+      elif add == "Italic":
+         add = "3"
+      elif add == "UL":
+         add = "4"
+      elif add == "Blink":
+         add = "5"
+      elif add == "CR":
+         add = "7"
+      elif add == "Hide":
+         add = "8"
+      elif add == "ST":
+         add == "9"
+      else:
+         add = add
+
+      if start == True:
+         return f"\033[{add}m"
+      else:
+         return add
+
+   def Stext(text, fg=None, bg=None, add=None, fgb=True, bgb=True):
+      if add is None:
+         add = ""
+      elif add == "RA":
+         add = "0;"
+      elif add == "Bold":
+         add = "1;"
+      elif add == "LTB":
+         add = "2;"
+      elif add == "Italic":
+         add = "3;"
+      elif add == "UL":
+         add = "4;"
+      elif add == "Blink":
+         add = "5;"
+      elif add == "CR":
+         add = "7;"
+      elif add == "Hide":
+         add = "8;"
+      elif add == "ST":
+         add == "9;"
+      else:
+         add = add
+
+      if bg is None:
+         bg = ""
+      elif bg == "black":
+         if bgb == True:
+            bg = "100;"
+         else:
+            bg = "40;"
+      elif bg == "red":
+         if bgb == True: 
+            bg = "101;"
+         else:
+            bg = "41;"
+      elif bg == "green":
+         if bgb == True:
+            bg = "102;"
+         else:
+            bg = "42;"
+
+      elif bg == "yellow":
+         if bgb == True:
+            bg = "103;"
+         else:
+            bg = "43;"
+      elif bg == "blue":
+         if bgb == True:
+            bg = "104;"
+         else:
+            bg = "44;"
+
+      elif bg == "magenta":
+         if bgb == True:
+            bg = "105;"
+         else:
+            bg = "45;"
+      elif bg == "cyan":
+         if bgb == True:
+            bg = "106;"
+         else:
+            bg = "46;"
+
+      elif bg == "white":
+         if bgb == True:
+            bg = "107;"
+         else:
+            bg = "47;"
+      else:
+         bg = bg
+
+      if fg is None:
+         fg = ""
+      elif fg == "black":
+         if fgb == True:
+            fg = "90;"
+         else:
+            fg = "30;"
+      elif fg == "red":
+         if fgb == True:
+            fg = "91;"
+         else:
+            fg = "31;"
+      elif fg == "green":
+         if fgb == True:
+            fg = "92;"
+         else:
+            fg = "32;"
+
+      elif fg == "yellow":
+         if fgb == True:
+            fg = "93;"
+         else:
+            fg = "33;"
+      elif fg == "blue":
+         if fgb == True:
+            fg = "94;"
+         else:
+            fg = "34;"
+
+      elif fg == "magenta":
+         if fgb == True:
+            fg = "95;"
+         else:
+            fg = "35;"
+      elif fg == "cyan":
+         if fgb == True:
+            fg = "96;"
+         else:
+            fg = "36;"
+
+      elif fg == "white":
+         if fgb == True:
+            fg = "97;"
+         else:
+            fg = "37;"
+      else:
+         fg = fg
+
+      #print("\033[30;107mHi\033[0m")
+      code = f"{add}{fg}{bg}".rstrip(";")
+      return f"\033[{code}m{text}\033[0m"
 
 class TwoBaseNumSys():
    def Sys1(TbN = TbN, CASs = CASs, Name="Count", Count=(1 , 1), CountADV=(1 , 1 , 0)):
