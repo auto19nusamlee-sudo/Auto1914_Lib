@@ -1,6 +1,6 @@
 First Things To Do is That You had to Import.
 
-from TwoBasNumBerSyS import TwoBaseNumSys
+from TwoBasNumBerSyS import TwoBaseNumSys , colorTextSys
 
 x = Update Ves from 1.0Demo
 y = Update Ves from 1.0_1
