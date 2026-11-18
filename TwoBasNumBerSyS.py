@@ -1,4 +1,4 @@
-#aversion: 1.0_3
+#aversion: 1.1Demo
 
 from pathlib import Path
 
@@ -8,7 +8,8 @@ TbN = BASE / "TBNBStxtF" / "TBNTest.txt"
 CASs = BASE / "TBNBStxtF" / "CA256S.txt"
 
 class colorTextSys():
-   def STfg(fg=None, fgb=None, start = True):
+   @staticmethod
+   def STfg(fg=None, fgb=None, start = True, m = True):
       if fg is None:
          fg = ""
       elif fg == "black":
@@ -58,10 +59,18 @@ class colorTextSys():
          fg = fg
          
       if start == True:
-         return f"\033[{fg}m"
+         if m == True:
+            return f"\033[{fg}m"
+         else:
+            return f"\033[{fg}"
       else:
-         return fg
-   def STbg(bg=None, bgb=None, start=True):
+         if m == True:
+            return f"{fg}m"
+         else:
+            return fg
+
+   @staticmethod
+   def STbg(bg=None, bgb=None, start=True, m=True):
       if bg is None:
          bg = ""
       elif bg == "black":
@@ -111,10 +120,17 @@ class colorTextSys():
          bg = bg
 
       if start == True:
-         return f"\033[{bg}m"
+         if m == True:
+            return f"\033[{bg}m"
+         else:
+            return f"\033[{bg}"
       else:
-         return bg
-   def STadd(add=None, start=True):
+         if m == True:
+            return f"{bg}m"
+         else:
+            return bg
+   @staticmethod
+   def STadd(add=None, start=True, m=True):
       if add is None:
          add = ""
       elif add == "RA":
@@ -139,10 +155,17 @@ class colorTextSys():
          add = add
 
       if start == True:
-         return f"\033[{add}m"
+         if m == True:
+            return f"\033[{add}m"
+         else:
+            return f"\033[{add}"
       else:
-         return add
+         if m == True:
+            return f"{add}m"
+         else:
+            return add
 
+   @staticmethod
    def Stext(text, fg=None, bg=None, add=None, fgb=True, bgb=True):
       if add is None:
          add = ""
@@ -268,6 +291,7 @@ class colorTextSys():
       return f"\033[{code}m{text}\033[0m"
 
 class TwoBaseNumSys():
+   @staticmethod
    def Sys1(TbN = TbN, CASs = CASs, Name="Count", Count=(1 , 1), CountADV=(1 , 1 , 0)):
         CountSet , CountTime = Count
         CountTimeBIN , CountFD , CountSet2 = CountADV
@@ -1026,6 +1050,7 @@ class TwoBaseNumSys():
               ReadSys2.write("0000 0000")
            Testi()
 
+   @staticmethod
    def Sys1RS(TbNS = TbN, CASsS = CASs):
       with open(TbNS, "w") as UsefuP:
          UsefuP.write("0000 0000")
